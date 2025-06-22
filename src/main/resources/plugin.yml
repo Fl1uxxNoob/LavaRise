@@ -1,0 +1,50 @@
+name: LavaRise
+version: '1.0.0'
+main: net.fliuxx.lavaRise.LavaRise
+api-version: '1.20'
+author: Fl1uxxNoob
+description: A Minecraft LavaRise minigame plugin
+website: https://github.com/Fl1uxxNoob/LavaRise
+
+commands:
+  lavarise:
+    description: Main LavaRise command
+    usage: /lavarise <subcommand>
+    aliases: [lr]
+    permission: lavarise.use
+
+permissions:
+  lavarise.admin:
+    description: Admin permissions for LavaRise
+    default: op
+    children:
+      lavarise.start: true
+      lavarise.stop: true
+      lavarise.gui: true
+      lavarise.reload: true
+      lavarise.setupworld: true
+      lavarise.arenas: true
+  lavarise.start:
+    description: Permission to start games
+    default: op
+  lavarise.stop:
+    description: Permission to stop games
+    default: op
+  lavarise.gui:
+    description: Permission to access admin GUI
+    default: op
+  lavarise.reload:
+    description: Permission to reload plugin
+    default: op
+  lavarise.setupworld:
+    description: Permission to setup new arenas
+    default: op
+  lavarise.arenas:
+    description: Permission to check arena status
+    default: op
+  lavarise.use:
+    description: Basic permission to use plugin
+    default: true
+  lavarise.spectate:
+    description: Permission to spectate games
+    default: true

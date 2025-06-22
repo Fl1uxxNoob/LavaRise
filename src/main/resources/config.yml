@@ -1,0 +1,53 @@
+# LavaRise Plugin Configuration
+# Author: Fl1uxxNoob
+
+# World settings
+world:
+  name: "lavarise_world"
+  border_initial_size: 200
+  border_final_size: 20
+  border_shrink_time: 600 # seconds
+  spawn_height: 100
+  max_height: 256
+
+# Game settings
+game:
+  min_players: 2
+  max_players: 20
+  initial_countdown: 60 # seconds before lava starts
+  pvp_countdown: 180 # seconds before PvP is enabled
+  lava_rise_interval: 5 # seconds between lava level increases
+  lava_rise_amount: 1 # blocks per interval
+  starting_lava_level: 0
+
+# Teleportation settings
+teleport:
+  spawn_world: "world"
+  spawn_x: 0
+  spawn_y: 100
+  spawn_z: 0
+  game_spread_distance: 50
+
+# GUI settings
+gui:
+  admin_title: "&c&lLavaRise Admin Panel"
+  
+# Scoreboard settings
+scoreboard:
+  enabled: true
+  title: "&c&lLAVA RISE"
+  update_interval: 20 # ticks
+
+# BossBar settings
+bossbar:
+  enabled: true
+  color: "RED"
+  style: "SOLID"
+
+# Messages settings (references to messages.yml)
+messages:
+  enabled: true
+  
+# Debug settings
+debug:
+  enabled: false

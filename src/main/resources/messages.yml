@@ -1,0 +1,84 @@
+# LavaRise Plugin Messages
+# Author: Fl1uxxNoob
+
+# General messages
+general:
+  prefix: "&c[LavaRise] "
+  no_permission: "&cYou don't have permission to use this command!"
+  player_only: "&cThis command can only be used by players!"
+  unknown_command: "&cUnknown subcommand! Use /lavarise help for help."
+  config_reloaded: "&aConfiguration reloaded successfully!"
+
+# Game messages
+game:
+  not_enough_players: "&cNot enough players to start the game! Minimum: %min_players%"
+  already_running: "&cA game is already running!"
+  not_running: "&cNo game is currently running!"
+  starting: "&aGame starting in %seconds% seconds!"
+  started: "&aThe LavaRise game has started! Lava will begin rising soon!"
+  lava_rising: "&cLava is now rising! Current level: Y=%level%"
+  pvp_enabled: "&cPvP has been enabled! Fight for survival!"
+  game_ended: "&aGame ended!"
+  winner: "&6&l%player% has won the LavaRise game!"
+  eliminated: "&cYou have been eliminated! You are now spectating."
+  joined_spectator: "&7You have joined as a spectator."
+
+# Countdown messages
+countdown:
+  game_start: "&c&lGame starts in: &f%time%"
+  lava_start: "&c&lLava rises in: &f%time%"
+  pvp_start: "&c&lPvP enabled in: &f%time%"
+
+# Scoreboard
+scoreboard:
+  players_alive: "&7Players: &f%count%"
+  lava_level: "&7Lava Y: &f%level%"
+  game_time: "&7Time: &f%time%"
+  pvp_status: "&7PvP: %status%"
+  border_size: "&7Border: &f%size%"
+
+# GUI messages
+gui:
+  admin_panel: "&c&lLavaRise Admin Panel"
+  start_game: "&a&lStart Game"
+  stop_game: "&c&lStop Game"
+  reload_config: "&e&lReload Config"
+  game_status: "&b&lGame Status"
+  player_list: "&f&lPlayer List"
+  
+  # GUI descriptions
+  start_game_desc: "&7Click to start a new game"
+  stop_game_desc: "&7Click to stop the current game"
+  reload_config_desc: "&7Click to reload configuration"
+  game_status_desc: "&7View current game status"
+  player_list_desc: "&7View players in game"
+
+# Command help
+help:
+  header: "&c&m----------&c LavaRise Help &c&m----------"
+  footer: "&c&m--------------------------------"
+  commands:
+    - "&e/lavarise start &7- Start a new game"
+    - "&e/lavarise stop &7- Stop the current game"
+    - "&e/lavarise gui &7- Open admin GUI"
+    - "&e/lavarise spectate &7- Join as spectator"
+    - "&e/lavarise setupworld &7- Setup new arenas"
+    - "&e/lavarise arenas &7- Check arena status"
+    - "&e/lavarise reload &7- Reload configuration"
+    - "&e/lavarise help &7- Show this help"
+
+# Status messages
+status:
+  waiting: "&eWaiting for players"
+  countdown: "&cCountdown: %time%"
+  active: "&aGame Active"
+  pvp_disabled: "&cDisabled"
+  pvp_enabled: "&aEnabled"
+
+# Error messages
+errors:
+  world_creation_failed: "&cFailed to create game world!"
+  no_arenas_available: "&cNo arenas available! Use /lavarise setupworld to create new arenas."
+  teleport_failed: "&cFailed to teleport player!"
+  config_error: "&cConfiguration error: %error%"
+  unexpected_error: "&cAn unexpected error occurred!"
